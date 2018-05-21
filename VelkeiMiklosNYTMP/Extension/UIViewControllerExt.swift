@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+import SafariServices
+
+extension UIViewController{
+    func presentSafariVC(url: String){
+        guard let url = URL(string: url) else {
+            return
+        }
+        let svc = SFSafariViewController(url: url)
+        present(svc, animated: true, completion: nil)
+    }
+}

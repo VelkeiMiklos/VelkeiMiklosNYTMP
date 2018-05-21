@@ -7,25 +7,25 @@
 //
 
 import Foundation
-
-struct Article{
-    
-    public private(set) var url, adxKeywords, type, section, byline, title, abstract, publishedDate : String
-    public private(set) var column: String?
+struct Article {
+  
+//MARK:- Article
+    public private(set) var url, adxKeywords, type, section, byline, title, abstract, publishedDate, source : String
     public private(set) var id, assetID, views: Int
     public private(set) var desFacet, orgFacet, perFacet, geoFacet: [String]
-    public private(set) var media: [Media]
-    
-    init(url:String, adxKeywords: String, type: String, column: String, section: String, byline: String, title: String, abstract: String, publishedDate: String, id: Int, assetID: Int, views: Int, desFacet: [String] , orgFacet: [String] , perFacet: [String], geoFacet: [String], media: [Media]) {
+    public private(set) var media: Media
+    public private(set) var publishedDateToSort: Date
+
+    init(url:String, adxKeywords: String, type: String,  section: String, byline: String, title: String, abstract: String, publishedDate: String, source: String, id: Int, assetID: Int, views: Int, desFacet: [String] , orgFacet: [String] , perFacet: [String], geoFacet: [String], media: Media, publishedDateToSort: Date) {
         self.url = url
         self.adxKeywords = adxKeywords
         self.type = type
+        self.source = source
         self.section = section
         self.byline = byline
         self.title = title
         self.abstract = abstract
         self.publishedDate = publishedDate
-        self.column = column
         self.id = id
         self.assetID = assetID
         self.views = views
@@ -34,9 +34,10 @@ struct Article{
         self.perFacet = perFacet
         self.geoFacet = geoFacet
         self.media = media
+        self.publishedDateToSort = publishedDateToSort
     }
 }
-
+//MARK:- Media
 struct Media{
     public private(set) var type, subtype, caption, copyright: String
     public private(set) var approvedForSyndication: Int
@@ -52,6 +53,7 @@ struct Media{
     }
 }
 
+//MARK:- MediaMetaData
 struct MediaMetadata {
     public private(set) var url: String
     public private(set) var format: String
@@ -63,5 +65,5 @@ struct MediaMetadata {
         self.height = height
         self.width = width
     }
-    
 }
+

@@ -7,30 +7,63 @@
 //
 
 import XCTest
-
 class VelkeiMiklosNYTMPUITests: XCTestCase {
-        
+    
+    var app: XCUIApplication!
+    
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-        XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        app = XCUIApplication()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        app = nil
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_Segmented_Controls(){
+        app.launch()
+        app.buttons[Period.WEEK].tap()
+        XCTAssertTrue(app.segmentedControls.buttons.element(boundBy: 1).isSelected)
+        app.buttons[Period.DAY].tap()
+        XCTAssertTrue(app.segmentedControls.buttons.element(boundBy: 0).isSelected)
+        app.buttons[Period.MONTH].tap()
+        XCTAssertTrue(app.segmentedControls.buttons.element(boundBy: 2).isSelected)
+    }
+
+    func test_TableView_Is_Not_Empty(){
+        app.launch()
+        XCUIApplication().tables.element.swipeUp()
+        XCTAssert(app.tables.staticTexts.count > 0)
     }
     
+    func test_TableView_Tap_On_Cell_And_Show_Detail(){
+        app.launch()
+        XCUIApplication().tables.cells.element(boundBy: 1).tap()
+        XCTAssertTrue(app.isDisplayingDetailVC)
+    }
+    
+    func test_Tap_On_DetailVC_Back_Button(){
+      app.launch()
+      XCUIApplication().tables.cells.element(boundBy: 1).tap()
+      app.navigationBars.buttons[ButtonText.BACK].tap()
+      XCTAssertTrue(app.isDisplayingMainVC)
+    }
+    
+    func test_Tap_On_Safari_Button(){
+        app.launch()
+        XCUIApplication().tables.cells.element(boundBy: 1).tap()
+        app.buttons[ButtonText.OPEN].tap()
+        XCTAssertFalse(app.isDisplayingDetailVC)
+    }
+}
+
+extension XCUIApplication{
+    var isDisplayingDetailVC: Bool{
+        return otherElements[View_ID.VIEW_ID_DETAIL_VC].exists
+    }
+    var isDisplayingMainVC: Bool{
+        return otherElements[View_ID.VIEW_ID_MAIN_VC].exists
+    }
 }

@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Foundation
 import UIKit
+
 var imageCache = [String: UIImage]()
 
 class CustomImageView: UIImageView {
@@ -18,7 +18,6 @@ class CustomImageView: UIImageView {
     func loadImage(urlString: String) {
         lastURLUsedToLoadImage = urlString
         
-        //Kitörli mindig a képeket
         self.image = nil
         
         if let cachedImage = imageCache[urlString] {
@@ -27,7 +26,7 @@ class CustomImageView: UIImageView {
         }
         
         guard let url = URL(string: urlString) else {
-            self.image = UIImage(named: "no_image")
+            self.image = UIImage(named: "no image")
             return
         }
         
@@ -54,19 +53,23 @@ class CustomImageView: UIImageView {
             }.resume()
     }
     
-    //Kerek kép
     override func awakeFromNib() {
         setupView()
+        setupBorder()
     }
-    func setupView()
-    {
+    
+    func setupView(){
         self.layer.cornerRadius = self.frame.width / 2
         self.clipsToBounds = true
     }
+    
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setupView()
     }
     
-    
+    func setupBorder(){
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.customLblGray.cgColor
+    }
 }

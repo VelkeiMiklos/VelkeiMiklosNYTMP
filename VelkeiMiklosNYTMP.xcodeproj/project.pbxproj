@@ -7,25 +7,120 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F528EB2D20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F528EB2C20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.swift */; };
+		F540FEE520B05F7300A8D023 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540FEE420B05F7300A8D023 /* TestConstants.swift */; };
+		F56430A720B17CA900DFD54F /* UITestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56430A620B17CA900DFD54F /* UITestConstants.swift */; };
+		F5763ACF20AB6FF300053617 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5763ACE20AB6FF300053617 /* CustomView.swift */; };
+		F5763AD120AB73E300053617 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5763AD020AB73E300053617 /* CustomButton.swift */; };
+		F5763AD620AB78D600053617 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5763AD520AB78D600053617 /* UIViewControllerExt.swift */; };
+		F577308E20AEF29D0052D6EC /* DateConverterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577308D20AEF29D0052D6EC /* DateConverterHelper.swift */; };
+		F577309220AEF5FF0052D6EC /* VelkeiMiklosNYTMPDetailVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F577309120AEF5FF0052D6EC /* VelkeiMiklosNYTMPDetailVCTests.swift */; };
 		F5834BF220AB4E2F002DF8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834BF120AB4E2F002DF8BA /* AppDelegate.swift */; };
-		F5834BF420AB4E2F002DF8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834BF320AB4E2F002DF8BA /* ViewController.swift */; };
+		F5834BF420AB4E2F002DF8BA /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834BF320AB4E2F002DF8BA /* MainVC.swift */; };
 		F5834BF720AB4E2F002DF8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5834BF520AB4E2F002DF8BA /* Main.storyboard */; };
 		F5834BF920AB4E36002DF8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5834BF820AB4E36002DF8BA /* Assets.xcassets */; };
 		F5834BFC20AB4E36002DF8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5834BFA20AB4E36002DF8BA /* LaunchScreen.storyboard */; };
+		F5834C0E20AB4E7F002DF8BA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C0820AB4E7E002DF8BA /* Reachability.swift */; };
+		F5834C0F20AB4E7F002DF8BA /* UIColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C0920AB4E7E002DF8BA /* UIColorExt.swift */; };
+		F5834C1020AB4E7F002DF8BA /* AlertUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C0A20AB4E7E002DF8BA /* AlertUtil.swift */; };
+		F5834C1120AB4E7F002DF8BA /* DataServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C0B20AB4E7E002DF8BA /* DataServiceUtil.swift */; };
+		F5834C1220AB4E7F002DF8BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C0C20AB4E7E002DF8BA /* Constants.swift */; };
+		F5834C1320AB4E7F002DF8BA /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C0D20AB4E7F002DF8BA /* CustomImageView.swift */; };
+		F5834C1520AB4E87002DF8BA /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C1420AB4E86002DF8BA /* DownloadService.swift */; };
+		F5834C1720AB4E95002DF8BA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C1620AB4E95002DF8BA /* Article.swift */; };
+		F5834C1920AB4E9B002DF8BA /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C1820AB4E9B002DF8BA /* ArticleCell.swift */; };
+		F5834C1B20AB4ECC002DF8BA /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C1A20AB4ECC002DF8BA /* DetailVC.swift */; };
+		F5834C1E20AB5206002DF8BA /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5834C1D20AB5206002DF8BA /* URLHelper.swift */; };
+		F59830C520B000BB005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59830C420B000BB005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.swift */; };
+		FE8DA7713FD93C340FCD80A3 /* Pods_VelkeiMiklosNYTMP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EB79AFFDE3678BB7FF3A3E /* Pods_VelkeiMiklosNYTMP.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F528EB2F20B0103E00806D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5834BE620AB4E2F002DF8BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5834BED20AB4E2F002DF8BA;
+			remoteInfo = VelkeiMiklosNYTMP;
+		};
+		F577308420AECD9C0052D6EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5834BE620AB4E2F002DF8BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5834BED20AB4E2F002DF8BA;
+			remoteInfo = VelkeiMiklosNYTMP;
+		};
+		F59830BF20AFFD52005CA4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5834BE620AB4E2F002DF8BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5834BED20AB4E2F002DF8BA;
+			remoteInfo = VelkeiMiklosNYTMP;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		16EB79AFFDE3678BB7FF3A3E /* Pods_VelkeiMiklosNYTMP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VelkeiMiklosNYTMP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51991DE44A8467D2BC633588 /* Pods-VelkeiMiklosNYTMP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VelkeiMiklosNYTMP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VelkeiMiklosNYTMP/Pods-VelkeiMiklosNYTMP.debug.xcconfig"; sourceTree = "<group>"; };
+		9068C0BE834B75582582E3C7 /* Pods-VelkeiMiklosNYTMP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VelkeiMiklosNYTMP.release.xcconfig"; path = "Pods/Target Support Files/Pods-VelkeiMiklosNYTMP/Pods-VelkeiMiklosNYTMP.release.xcconfig"; sourceTree = "<group>"; };
+		F528EB2A20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VelkeiMiklosNYTMPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F528EB2C20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelkeiMiklosNYTMPUITests.swift; sourceTree = "<group>"; };
+		F528EB2E20B0103E00806D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F540FEE420B05F7300A8D023 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		F56430A620B17CA900DFD54F /* UITestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestConstants.swift; sourceTree = "<group>"; };
+		F5763ACE20AB6FF300053617 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		F5763AD020AB73E300053617 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F5763AD520AB78D600053617 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		F577307F20AECD9C0052D6EC /* VelkeiMiklosNYTMPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VelkeiMiklosNYTMPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F577308320AECD9C0052D6EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F577308D20AEF29D0052D6EC /* DateConverterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConverterHelper.swift; sourceTree = "<group>"; };
+		F577309120AEF5FF0052D6EC /* VelkeiMiklosNYTMPDetailVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelkeiMiklosNYTMPDetailVCTests.swift; sourceTree = "<group>"; };
 		F5834BEE20AB4E2F002DF8BA /* VelkeiMiklosNYTMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VelkeiMiklosNYTMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5834BF120AB4E2F002DF8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5834BF320AB4E2F002DF8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5834BF320AB4E2F002DF8BA /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F5834BF620AB4E2F002DF8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5834BF820AB4E36002DF8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5834BFB20AB4E36002DF8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5834BFD20AB4E36002DF8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5834C0820AB4E7E002DF8BA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F5834C0920AB4E7E002DF8BA /* UIColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExt.swift; sourceTree = "<group>"; };
+		F5834C0A20AB4E7E002DF8BA /* AlertUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtil.swift; sourceTree = "<group>"; };
+		F5834C0B20AB4E7E002DF8BA /* DataServiceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceUtil.swift; sourceTree = "<group>"; };
+		F5834C0C20AB4E7E002DF8BA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F5834C0D20AB4E7F002DF8BA /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F5834C1420AB4E86002DF8BA /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		F5834C1620AB4E95002DF8BA /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F5834C1820AB4E9B002DF8BA /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		F5834C1A20AB4ECC002DF8BA /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		F5834C1D20AB5206002DF8BA /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		F59830BA20AFFD52005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VelkeiMiklosNYTMPMainVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59830C420B000BB005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelkeiMiklosNYTMPMainVCTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F528EB2720B0103E00806D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F577307C20AECD9C0052D6EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5834BEB20AB4E2F002DF8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8DA7713FD93C340FCD80A3 /* Pods_VelkeiMiklosNYTMP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59830B720AFFD52005CA4C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,11 +130,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D01C09473543F0807D7EBD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16EB79AFFDE3678BB7FF3A3E /* Pods_VelkeiMiklosNYTMP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98FE5DF9F9173713F68A5A9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51991DE44A8467D2BC633588 /* Pods-VelkeiMiklosNYTMP.debug.xcconfig */,
+				9068C0BE834B75582582E3C7 /* Pods-VelkeiMiklosNYTMP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F528EB2B20B0103E00806D5A /* VelkeiMiklosNYTMPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F528EB2C20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.swift */,
+				F56430A620B17CA900DFD54F /* UITestConstants.swift */,
+				F528EB2E20B0103E00806D5A /* Info.plist */,
+			);
+			path = VelkeiMiklosNYTMPUITests;
+			sourceTree = "<group>";
+		};
+		F5424CA420ACA41100F3DA30 /* CustomHelper */ = {
+			isa = PBXGroup;
+			children = (
+				F5763ACE20AB6FF300053617 /* CustomView.swift */,
+				F5834C0D20AB4E7F002DF8BA /* CustomImageView.swift */,
+				F5763AD020AB73E300053617 /* CustomButton.swift */,
+			);
+			path = CustomHelper;
+			sourceTree = "<group>";
+		};
+		F5763AD420AB78BE00053617 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5834C0920AB4E7E002DF8BA /* UIColorExt.swift */,
+				F5763AD520AB78D600053617 /* UIViewControllerExt.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F577308020AECD9C0052D6EC /* VelkeiMiklosNYTMPTests */ = {
+			isa = PBXGroup;
+			children = (
+				F577308320AECD9C0052D6EC /* Info.plist */,
+				F59830C420B000BB005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.swift */,
+				F577309120AEF5FF0052D6EC /* VelkeiMiklosNYTMPDetailVCTests.swift */,
+				F540FEE420B05F7300A8D023 /* TestConstants.swift */,
+			);
+			path = VelkeiMiklosNYTMPTests;
+			sourceTree = "<group>";
+		};
 		F5834BE520AB4E2F002DF8BA = {
 			isa = PBXGroup;
 			children = (
-				F5834BF020AB4E2F002DF8BA /* VelkeiMiklosNYTMP */,
+				F577308020AECD9C0052D6EC /* VelkeiMiklosNYTMPTests */,
+				F528EB2B20B0103E00806D5A /* VelkeiMiklosNYTMPUITests */,
+				6D01C09473543F0807D7EBD7 /* Frameworks */,
+				98FE5DF9F9173713F68A5A9D /* Pods */,
 				F5834BEF20AB4E2F002DF8BA /* Products */,
+				F5834BF020AB4E2F002DF8BA /* VelkeiMiklosNYTMP */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				F5834BEE20AB4E2F002DF8BA /* VelkeiMiklosNYTMP.app */,
+				F577307F20AECD9C0052D6EC /* VelkeiMiklosNYTMPTests.xctest */,
+				F59830BA20AFFD52005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.xctest */,
+				F528EB2A20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +213,15 @@
 		F5834BF020AB4E2F002DF8BA /* VelkeiMiklosNYTMP */ = {
 			isa = PBXGroup;
 			children = (
+				F5424CA420ACA41100F3DA30 /* CustomHelper */,
+				F5763AD420AB78BE00053617 /* Extension */,
+				F5834C1C20AB51EE002DF8BA /* Helper */,
+				F5834C0720AB4E6D002DF8BA /* Util */,
+				F5834C0620AB4E68002DF8BA /* Services */,
+				F5834C0520AB4E63002DF8BA /* Model */,
+				F5834C0420AB4E5C002DF8BA /* View */,
+				F5834C0320AB4E44002DF8BA /* Controller */,
 				F5834BF120AB4E2F002DF8BA /* AppDelegate.swift */,
-				F5834BF320AB4E2F002DF8BA /* ViewController.swift */,
 				F5834BF520AB4E2F002DF8BA /* Main.storyboard */,
 				F5834BF820AB4E36002DF8BA /* Assets.xcassets */,
 				F5834BFA20AB4E36002DF8BA /* LaunchScreen.storyboard */,
@@ -64,16 +230,107 @@
 			path = VelkeiMiklosNYTMP;
 			sourceTree = "<group>";
 		};
+		F5834C0320AB4E44002DF8BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5834BF320AB4E2F002DF8BA /* MainVC.swift */,
+				F5834C1A20AB4ECC002DF8BA /* DetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5834C0420AB4E5C002DF8BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5834C1820AB4E9B002DF8BA /* ArticleCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5834C0520AB4E63002DF8BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5834C1620AB4E95002DF8BA /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5834C0620AB4E68002DF8BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F5834C1420AB4E86002DF8BA /* DownloadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F5834C0720AB4E6D002DF8BA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F5834C0820AB4E7E002DF8BA /* Reachability.swift */,
+				F5834C0C20AB4E7E002DF8BA /* Constants.swift */,
+				F5834C0A20AB4E7E002DF8BA /* AlertUtil.swift */,
+				F5834C0B20AB4E7E002DF8BA /* DataServiceUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F5834C1C20AB51EE002DF8BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F5834C1D20AB5206002DF8BA /* URLHelper.swift */,
+				F577308D20AEF29D0052D6EC /* DateConverterHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F528EB2920B0103E00806D5A /* VelkeiMiklosNYTMPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F528EB3320B0103E00806D5A /* Build configuration list for PBXNativeTarget "VelkeiMiklosNYTMPUITests" */;
+			buildPhases = (
+				F528EB2620B0103E00806D5A /* Sources */,
+				F528EB2720B0103E00806D5A /* Frameworks */,
+				F528EB2820B0103E00806D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F528EB3020B0103E00806D5A /* PBXTargetDependency */,
+			);
+			name = VelkeiMiklosNYTMPUITests;
+			productName = VelkeiMiklosNYTMPUITests;
+			productReference = F528EB2A20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F577307E20AECD9C0052D6EC /* VelkeiMiklosNYTMPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F577308820AECD9C0052D6EC /* Build configuration list for PBXNativeTarget "VelkeiMiklosNYTMPTests" */;
+			buildPhases = (
+				F577307B20AECD9C0052D6EC /* Sources */,
+				F577307C20AECD9C0052D6EC /* Frameworks */,
+				F577307D20AECD9C0052D6EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F577308520AECD9C0052D6EC /* PBXTargetDependency */,
+			);
+			name = VelkeiMiklosNYTMPTests;
+			productName = VelkeiMiklosNYTMPTests;
+			productReference = F577307F20AECD9C0052D6EC /* VelkeiMiklosNYTMPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F5834BED20AB4E2F002DF8BA /* VelkeiMiklosNYTMP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5834C0020AB4E36002DF8BA /* Build configuration list for PBXNativeTarget "VelkeiMiklosNYTMP" */;
 			buildPhases = (
+				B60C129C00AB20C0E95DE266 /* [CP] Check Pods Manifest.lock */,
 				F5834BEA20AB4E2F002DF8BA /* Sources */,
 				F5834BEB20AB4E2F002DF8BA /* Frameworks */,
 				F5834BEC20AB4E2F002DF8BA /* Resources */,
+				658AEEF06C2C5B18A90A9670 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -83,6 +340,24 @@
 			productName = VelkeiMiklosNYTMP;
 			productReference = F5834BEE20AB4E2F002DF8BA /* VelkeiMiklosNYTMP.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F59830B920AFFD52005CA4C3 /* VelkeiMiklosNYTMPMainVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59830C120AFFD52005CA4C3 /* Build configuration list for PBXNativeTarget "VelkeiMiklosNYTMPMainVCTests" */;
+			buildPhases = (
+				F59830B620AFFD52005CA4C3 /* Sources */,
+				F59830B720AFFD52005CA4C3 /* Frameworks */,
+				F59830B820AFFD52005CA4C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F59830C020AFFD52005CA4C3 /* PBXTargetDependency */,
+			);
+			name = VelkeiMiklosNYTMPMainVCTests;
+			productName = VelkeiMiklosNYTMPMainVCTests;
+			productReference = F59830BA20AFFD52005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,8 +369,20 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = NeonatCore;
 				TargetAttributes = {
+					F528EB2920B0103E00806D5A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F5834BED20AB4E2F002DF8BA;
+					};
+					F577307E20AECD9C0052D6EC = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F5834BED20AB4E2F002DF8BA;
+					};
 					F5834BED20AB4E2F002DF8BA = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					F59830B920AFFD52005CA4C3 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = F5834BED20AB4E2F002DF8BA;
 					};
 				};
 			};
@@ -113,11 +400,28 @@
 			projectRoot = "";
 			targets = (
 				F5834BED20AB4E2F002DF8BA /* VelkeiMiklosNYTMP */,
+				F577307E20AECD9C0052D6EC /* VelkeiMiklosNYTMPTests */,
+				F59830B920AFFD52005CA4C3 /* VelkeiMiklosNYTMPMainVCTests */,
+				F528EB2920B0103E00806D5A /* VelkeiMiklosNYTMPUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F528EB2820B0103E00806D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F577307D20AECD9C0052D6EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5834BEC20AB4E2F002DF8BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,19 +432,124 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F59830B820AFFD52005CA4C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		658AEEF06C2C5B18A90A9670 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VelkeiMiklosNYTMP/Pods-VelkeiMiklosNYTMP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VelkeiMiklosNYTMP/Pods-VelkeiMiklosNYTMP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60C129C00AB20C0E95DE266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VelkeiMiklosNYTMP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F528EB2620B0103E00806D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F528EB2D20B0103E00806D5A /* VelkeiMiklosNYTMPUITests.swift in Sources */,
+				F56430A720B17CA900DFD54F /* UITestConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F577307B20AECD9C0052D6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F577309220AEF5FF0052D6EC /* VelkeiMiklosNYTMPDetailVCTests.swift in Sources */,
+				F540FEE520B05F7300A8D023 /* TestConstants.swift in Sources */,
+				F59830C520B000BB005CA4C3 /* VelkeiMiklosNYTMPMainVCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5834BEA20AB4E2F002DF8BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5834BF420AB4E2F002DF8BA /* ViewController.swift in Sources */,
+				F5834BF420AB4E2F002DF8BA /* MainVC.swift in Sources */,
+				F5834C1320AB4E7F002DF8BA /* CustomImageView.swift in Sources */,
+				F5763AD620AB78D600053617 /* UIViewControllerExt.swift in Sources */,
+				F577308E20AEF29D0052D6EC /* DateConverterHelper.swift in Sources */,
+				F5834C0F20AB4E7F002DF8BA /* UIColorExt.swift in Sources */,
+				F5763ACF20AB6FF300053617 /* CustomView.swift in Sources */,
 				F5834BF220AB4E2F002DF8BA /* AppDelegate.swift in Sources */,
+				F5834C1720AB4E95002DF8BA /* Article.swift in Sources */,
+				F5834C1B20AB4ECC002DF8BA /* DetailVC.swift in Sources */,
+				F5834C1020AB4E7F002DF8BA /* AlertUtil.swift in Sources */,
+				F5834C1220AB4E7F002DF8BA /* Constants.swift in Sources */,
+				F5834C0E20AB4E7F002DF8BA /* Reachability.swift in Sources */,
+				F5834C1120AB4E7F002DF8BA /* DataServiceUtil.swift in Sources */,
+				F5834C1520AB4E87002DF8BA /* DownloadService.swift in Sources */,
+				F5834C1E20AB5206002DF8BA /* URLHelper.swift in Sources */,
+				F5834C1920AB4E9B002DF8BA /* ArticleCell.swift in Sources */,
+				F5763AD120AB73E300053617 /* CustomButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59830B620AFFD52005CA4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F528EB3020B0103E00806D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5834BED20AB4E2F002DF8BA /* VelkeiMiklosNYTMP */;
+			targetProxy = F528EB2F20B0103E00806D5A /* PBXContainerItemProxy */;
+		};
+		F577308520AECD9C0052D6EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5834BED20AB4E2F002DF8BA /* VelkeiMiklosNYTMP */;
+			targetProxy = F577308420AECD9C0052D6EC /* PBXContainerItemProxy */;
+		};
+		F59830C020AFFD52005CA4C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5834BED20AB4E2F002DF8BA /* VelkeiMiklosNYTMP */;
+			targetProxy = F59830BF20AFFD52005CA4C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F5834BF520AB4E2F002DF8BA /* Main.storyboard */ = {
@@ -162,6 +571,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F528EB3120B0103E00806D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = VelkeiMiklosNYTMPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.VelkeiMiklosNYTMPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VelkeiMiklosNYTMP;
+			};
+			name = Debug;
+		};
+		F528EB3220B0103E00806D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = VelkeiMiklosNYTMPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.VelkeiMiklosNYTMPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VelkeiMiklosNYTMP;
+			};
+			name = Release;
+		};
+		F577308620AECD9C0052D6EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = VelkeiMiklosNYTMPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.VelkeiMiklosNYTMPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VelkeiMiklosNYTMP.app/VelkeiMiklosNYTMP";
+			};
+			name = Debug;
+		};
+		F577308720AECD9C0052D6EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = VelkeiMiklosNYTMPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.VelkeiMiklosNYTMPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VelkeiMiklosNYTMP.app/VelkeiMiklosNYTMP";
+			};
+			name = Release;
+		};
 		F5834BFE20AB4E36002DF8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -278,6 +765,7 @@
 		};
 		F5834C0120AB4E36002DF8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51991DE44A8467D2BC633588 /* Pods-VelkeiMiklosNYTMP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +784,7 @@
 		};
 		F5834C0220AB4E36002DF8BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9068C0BE834B75582582E3C7 /* Pods-VelkeiMiklosNYTMP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,9 +801,67 @@
 			};
 			name = Release;
 		};
+		F59830C220AFFD52005CA4C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = VelkeiMiklosNYTMPMainVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.VelkeiMiklosNYTMPMainVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VelkeiMiklosNYTMP.app/VelkeiMiklosNYTMP";
+			};
+			name = Debug;
+		};
+		F59830C320AFFD52005CA4C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2M3TGJYMN;
+				INFOPLIST_FILE = VelkeiMiklosNYTMPMainVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neonatcore.VelkeiMiklosNYTMPMainVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VelkeiMiklosNYTMP.app/VelkeiMiklosNYTMP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F528EB3320B0103E00806D5A /* Build configuration list for PBXNativeTarget "VelkeiMiklosNYTMPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F528EB3120B0103E00806D5A /* Debug */,
+				F528EB3220B0103E00806D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F577308820AECD9C0052D6EC /* Build configuration list for PBXNativeTarget "VelkeiMiklosNYTMPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F577308620AECD9C0052D6EC /* Debug */,
+				F577308720AECD9C0052D6EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F5834BE920AB4E2F002DF8BA /* Build configuration list for PBXProject "VelkeiMiklosNYTMP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -329,6 +876,15 @@
 			buildConfigurations = (
 				F5834C0120AB4E36002DF8BA /* Debug */,
 				F5834C0220AB4E36002DF8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59830C120AFFD52005CA4C3 /* Build configuration list for PBXNativeTarget "VelkeiMiklosNYTMPMainVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59830C220AFFD52005CA4C3 /* Debug */,
+				F59830C320AFFD52005CA4C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

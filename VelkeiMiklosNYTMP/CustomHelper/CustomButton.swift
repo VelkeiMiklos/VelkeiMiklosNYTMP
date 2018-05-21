@@ -14,14 +14,18 @@ class CustomButton: UIButton {
             self.layer.cornerRadius = cornerRadious
         }
     }
+    
     override func awakeFromNib() {
         setupView()
     }
+    
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         self.setupView()
     }
+    
     func setupView(){
         self.layer.cornerRadius = cornerRadious
     }
+    
 }

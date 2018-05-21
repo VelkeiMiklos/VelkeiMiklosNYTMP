@@ -14,19 +14,24 @@ class CustomView: UIView {
             self.layer.cornerRadius = cornerRadious
         }
     }
+    
     override func awakeFromNib() {
         setupView()
         setupBorder()
     }
+    
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         self.setupView()
     }
+    
     func setupView(){
         self.layer.cornerRadius = cornerRadious
     }
+    
     func setupBorder(){
         layer.borderWidth = 1
-        layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
+        layer.borderColor = UIColor.customLblGray.cgColor
     }
+    
 }

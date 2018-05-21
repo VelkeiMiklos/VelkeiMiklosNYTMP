@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+public class DateConverterHelper{
+    static  func stringDateConvertoToDate(date: String)-> Date{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let publishedDateToSort = dateFormatter.date(from: date)
+        return publishedDateToSort!
+    }
+}
